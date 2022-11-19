@@ -493,8 +493,9 @@
 		<td align="center" valign=middle>内容</td>
 		<td align="center" valign=middle>可屏蔽性</td>
 		<td align="center" valign=middle>软件硬件</td>
+        <td align="center" valign=middle>响应（发生）时间</td>
         <td align="center" valign=middle>中断请求</td>
-        <td align="center" valign=middle>与指令</td>
+        <td align="center" valign=middle>与指令的关系</td>
 	</tr>
 	<tr>
 		<td rowspan=3 align="center" valign=middle>内部异常</td>
@@ -502,23 +503,27 @@
 		<td align="center" valign=middle>非法操作码、缺页故障</br>除数为 0、运算溢出</td>
 		<td rowspan=4 align="center" valign=middle>不可屏蔽</td>
 		<td rowspan=2 align="center" valign=middle>软件中断</td>
+        <td align="center" valign=middle>指令周期中</td>
         <td rowspan=3 align="center" valign=middle>由 CPU 自身完成</br>不必通过外部的信号通知</td>
         <td rowspan=2 align="center" valign=middle>由特定指令在执行过程中产生的</td>
 	</tr>
 	<tr>
 		<td align="center" valign=middle>自陷(Tarp)/访管</td>
 		<td align="center" valign=middle>只能在用户态执行</br>用户态下调用系统内核程序</td>
+        <td align="center" valign=middle>指令周期结束时</td>
 	</tr>
 	<tr>
 		<td align="center" valign=middle>终止(Abort)/硬件故障</td>
 		<td align="center" valign=middle>CPU 无法继续执行的硬件错误<br>主存故障、控制器出错、存储器校验错</td>
 		<td rowspan=3 align="center" valign=middle>硬件中断</td>
+        <td align="center" valign=middle>指令周期中</td>
         <td align="center" valign=middle></br></td>
 	</tr>
 	<tr>
 		<td rowspan=2 align="center" valign=middle>外部中断</td>
 		<td align="center" valign=middle>不可屏蔽中断(NMI)</td>
 		<td align="center" valign=middle>通过 NMI 线发出<br>如电源掉电</td>
+        <td rowspan=2 align="center" valign=middle>指令周期结束时</td>
         <td rowspan=2 align="center" valign=middle>必须通过中断请求线获取中断源的信息</td>
         <td rowspan=2 align="center" valign=middle>不和任何指令相关联，也不阻止任何指令的完成</td>
 	</tr>
