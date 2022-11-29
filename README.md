@@ -4,8 +4,10 @@
 
 内容来源：
 
-1. 王道 2023
+1. 2023 王道考研复习指导
   
-2. https://github.com/Didnelpsun/CS408
+2. 2023 年王道八套模拟题
+
+3. https://github.com/Didnelpsun/CS408
   
-3. 网络上的一些帖子
+4. 网络上的一些帖子
