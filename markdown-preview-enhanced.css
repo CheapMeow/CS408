@@ -1,0 +1,20 @@
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+.markdown-preview.markdown-preview {
+  
+  // modify your style here
+  // eg: background-color: blue;  
+  p {
+    padding: 0px;
+  }
+  blockquote {
+    margin:1.5rem 0;
+    padding:1rem 1.5rem 1rem 1.5rem;
+    border-width:0 0 0 4px;
+    border-color:rgb(112, 112, 233);
+    background:#f5f5f5;
+  }
+}
+
